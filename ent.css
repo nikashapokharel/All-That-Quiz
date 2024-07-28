@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: #D7BA89;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 2rem;
+}
+
+/* Spacer to prevent content from being overlapped by fixed nav */
+.nav-spacer {
+    height: 80px; /* Same height as nav */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: beige;
+    padding-top: 80px; /* Ensure content starts below fixed nav */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+    height: 400px; /* Adjusted height */
+    width: 600px; /* Adjusted width */
+    margin-top: 40px; /* Adjusted margin to reduce space at the top */
+}
+
+.wrapper .img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    clip-path: circle(0% at 0% 100%);
+    transition: all 0.7s;
+}
+
+/* Slider animations */
+#one:checked ~ .img-1 img {
+    clip-path: circle(150% at 0% 100%);
+}
+#two:checked ~ .img-1 img,
+#two:checked ~ .img-2 img {
+    clip-path: circle(150% at 0% 100%);
+}
+#three:checked ~ .img-1 img,
+#three:checked ~ .img-2 img,
+#three:checked ~ .img-3 img {
+    clip-path: circle(150% at 0% 100%);
+}
+#four:checked ~ .img-1 img,
+#four:checked ~ .img-2 img,
+#four:checked ~ .img-3 img,
+#four:checked ~ .img-4 img {
+    clip-path: circle(150% at 0% 100%);
+}
+#five:checked ~ .img-1 img,
+#five:checked ~ .img-2 img,
+#five:checked ~ .img-3 img,
+#five:checked ~ .img-4 img,
+#five:checked ~ .img-5 img {
+    clip-path: circle(150% at 0% 100%);
+}
+
+.wrapper .sliders {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    display: flex;
+}
+
+.wrapper .sliders label {
+    height: 13px;
+    width: 13px;
+    border: 2px solid beige;
+    margin: 0 3px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.sliders label:hover {
+    background: beige;
+}
+
+.wrapper input[type='radio'] {
+    display: none;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a860be;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #b18597;
+}

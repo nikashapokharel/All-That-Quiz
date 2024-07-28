@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: beige;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background: #D7BA89;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav .nav-items a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.content {
+    margin-top: 100px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.badge {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.badge img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.badge:hover img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.badge-title {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.badge-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+}

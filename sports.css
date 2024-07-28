@@ -1,0 +1,132 @@
+
+body {
+    background-color: #f5f5dc; /* Beige background */
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #D7BA89; /* Navigation bar color */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.nav-items {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0 20px; /* Added top padding to accommodate fixed navbar */
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    display: none;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    font-size: 1.2em;
+}
+
+.question-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    display: block;
+    width: 100%;
+    background: #D7BA89;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.option-button:hover {
+    background: #c5a67b;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background: #D7BA89;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#results-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.correct-option {
+    border: 2px solid green;
+    background-color: #e0ffe0; /* Light green background for correct answer */
+}
+
+.incorrect-option {
+    border: 2px solid red;
+    background-color: #ffe0e0; /* Light red background for incorrect answer */
+}
+
+/* Existing CSS code */
+
+/* Hide buttons initially */
+#prev-button,
+#next-button,
+#show-results-button {
+    display: none;
+}
