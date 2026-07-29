@@ -1,0 +1,9 @@
+Built a little quiz website last year and figured I’d share. It’s just some HTML, CSS, and JS sitting on GitHub, but it works.
+
+✨ The gist of it:
+
+Pick a genre: Entertainment, History, or Science (Science is still... under construction 🛠️).
+Go through an image slider with stuff related to the genre.(think Grammys, movies, etc.).
+Pick a subgenre (movies, songs, etc.), then start the quiz.
+There’s a badge system (barely functional) and a feedback form (which doesn’t actually do anything yet).
+Also threw in a tutorial page so people don’t get lost.
